@@ -13,7 +13,6 @@ A api envia métricas no container do prometheus, e o prometheus é adicionado n
 A api envia logs no container do elastic que por sua vez envia para o kibana.
 
 Conseguimos monitorar uma api com poucos passos.
-<img width="299" alt="Captura de tela 2023-01-12 134310" src="https://user-images.githubusercontent.com/111398584/212128271-fb54f147-7da8-4ae4-9860-df4b4b188329.png">
 
 Em vermelho encontramos as bibiliotecams que temos de instalar no nuguet:
 
