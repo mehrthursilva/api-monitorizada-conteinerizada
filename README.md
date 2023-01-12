@@ -37,3 +37,14 @@ docker run -d --network  n_easybox --name api-coneinerizada -p 8001:80 apoioprod
 
 
 Nota: este repositório apoioprodesp/apicontainer:v1 é um repositório docker, seria mais útil inserir o teu repositório.
+
+
+# Como verificar se tudo está rodando?
+
+Para o elastic vai na seguinte url: 
+
+Para o kibana faça as seguintes comfigurações :
+
+Para o prometheus faça o seguinte: 
+
+Para o grafana Faça o seguinte:
