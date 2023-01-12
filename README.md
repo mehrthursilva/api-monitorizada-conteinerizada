@@ -19,4 +19,13 @@ Em vermelho encontramos as bibiliotecams que temos de instalar no nuguet:
 
 # Como inicializar o projeto?
 1- Entrar na pasta elastic-kibana e rodar o comando:
-   docker compose up .
+
+   docker compose up -d .
+   
+2- Entrar na pasta prometheus e rodar o seguinte comando:
+   
+   docker compose up -d .
+   
+3- Entrar na pasta grafana rodar o seguinte comando:
+
+   docker compose up -d .
