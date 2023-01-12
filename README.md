@@ -54,3 +54,4 @@ Para o prometheus faça o seguinte: http://localhost:9090/graph
 
 Para o grafana Faça o seguinte: http://localhost:3000/login
 
+Para a api : http://localhost:8001/swagger/index.html
