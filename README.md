@@ -18,15 +18,15 @@ Em vermelho encontramos as bibiliotecams que temos de instalar no nuguet:
 
 
 # Como inicializar o projeto?
-1- Entrar na pasta elastic-kibana e rodar o comando:
+1- Entrar na primeira pasta cd e rodar o comando:
 
    docker compose up -d
    
-2- Entrar na pasta prometheus e rodar o seguinte comando:
+2- Entrar na segunda pasta cd e rodar o seguinte comando:
    
    docker compose up -d
    
-3- Entrar na pasta grafana rodar o seguinte comando:
+3- Entrar na terceira pasta cd rodar o seguinte comando:
 
    docker compose up -d
    
@@ -41,7 +41,7 @@ Nota: este repositório apoioprodesp/apicontainer:v1 é um repositório docker, 
 
 # Como verificar se tudo está rodando?
 
-Para o elastic vai na seguinte url: 
+Para o elastic vai na seguinte url: http://localhost:9200/
 
 Para o kibana faça as seguintes comfigurações :
 
