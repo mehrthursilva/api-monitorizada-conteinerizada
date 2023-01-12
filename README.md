@@ -9,4 +9,8 @@ Arquitetura do projeto:
 
 ![CI-CD](https://user-images.githubusercontent.com/111398584/212097940-7c1141fa-129e-4247-9d26-6bcaa4c850a9.png)
 
+A api envia métricas no container do prometheus, e o prometheus é adicionado no grafana.
+A api envia logs no container do elastic que por sua vez envia para o kibana.
+
+Conseguimos monitorar uma api com poucos passos.
 # Como inicializar o projeto?
