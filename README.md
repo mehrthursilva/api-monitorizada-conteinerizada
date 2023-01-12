@@ -20,15 +20,15 @@ Em vermelho encontramos as bibiliotecams que temos de instalar no nuguet:
 # Como inicializar o projeto?
 1- Entrar na primeira pasta cd e rodar o comando:
 
-   docker compose up -d
+    docker compose up -d
    
 2- Entrar na segunda pasta cd e rodar o seguinte comando:
    
-   docker compose up -d
+    docker compose up -d
    
 3- Entrar na terceira pasta cd rodar o seguinte comando:
 
-   docker compose up -d
+    docker compose up -d
    
 4- Para buildar a api e conectar ela na rede do prometheus e elastic:
 4.1 - Vai na pasta principal onde se encontra o Dockerfile
