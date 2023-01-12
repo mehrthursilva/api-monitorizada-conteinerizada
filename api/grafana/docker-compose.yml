@@ -1,0 +1,13 @@
+version: '3.1'
+networks:
+   n_easybox:
+    driver: bridge
+
+services:
+
+  grafana:
+   image: grafana/grafana:7.3.3
+   ports:
+     - "3000:3000"
+   networks:
+     - n_easybox

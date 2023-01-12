@@ -1,0 +1,16 @@
+version: '3.1'
+networks:
+   n_easybox:
+    driver: bridge
+
+services:
+
+  prometheus:
+   image: prom/prometheus:v2.22.0
+   ports:
+     - "9090:9090"
+   volumes:
+     - ./prometheus.yml:/etc/prometheus/prometheus.yml
+   networks:
+     - n_easybox
+       
