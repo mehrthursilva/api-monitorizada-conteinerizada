@@ -35,6 +35,8 @@ Em vermelho encontramos as bibiliotecams que temos de instalar no nuguet:
 4.2 - Executa o seguinte comando:
 
       docker image build --no-cache -t apoioprodesp/apicontainer:v1 . 
+      
+4.3 - Executa o seguinte comando:
 
       docker run -d --network  cd_n_easybox --name easybox -p 8001:80 apoioprodesp/apicontainer:v1
 
