@@ -33,9 +33,10 @@ Em vermelho encontramos as bibiliotecams que temos de instalar no nuguet:
 4- Para buildar a api e conectar ela na rede do prometheus e elastic:
 4.1 - Vai na pasta principal onde se encontra o Dockerfile
 4.2 - Executa o seguinte comando:
+
       docker image build --no-cache -t apoioprodesp/apicontainer:v1 . 
 
-docker run -d --network  cd_n_easybox --name easybox -p 8001:80 apoioprodesp/apicontainer:v1
+      docker run -d --network  cd_n_easybox --name easybox -p 8001:80 apoioprodesp/apicontainer:v1
 
 
 Nota: este repositório apoioprodesp/apicontainer:v1 é um repositório docker, seria mais útil inserir o teu repositório.
