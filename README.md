@@ -13,4 +13,8 @@ A api envia métricas no container do prometheus, e o prometheus é adicionado n
 A api envia logs no container do elastic que por sua vez envia para o kibana.
 
 Conseguimos monitorar uma api com poucos passos.
+
+Em vermelho encontramos as bibiliotecams que temos de instalar no nuguet:
+
+
 # Como inicializar o projeto?
