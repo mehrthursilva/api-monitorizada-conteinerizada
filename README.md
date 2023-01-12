@@ -43,7 +43,7 @@ Nota: este repositório apoioprodesp/apicontainer:v1 é um repositório docker, 
 
 Para o elastic vai na seguinte url: http://localhost:9200/
 
-Para o kibana faça as seguintes comfigurações :
+Para o kibana faça as seguintes comfigurações : http://localhost:5601/app/kibana#/home?_g=()
 
 Para o prometheus faça o seguinte: 
 
