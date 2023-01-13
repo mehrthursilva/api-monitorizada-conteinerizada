@@ -235,3 +235,12 @@ Filtrar apenas aqueles endpoints que o status code dá 200:
     
 <img width="952" alt="Captura de tela_20230113_152010" src="https://user-images.githubusercontent.com/111398584/212391730-528b66dd-9415-42d4-9164-576faf675d43.png">
 
+Outras querys básicas mas que fazem muita diferença caso quiser-mos achar os verbos de requisição que foram feitos:
+
+    http_requests_received_total{method="GET"}
+    http_requests_received_total{method="POST"}
+    
+Média de chamadas em 1 minuto:
+
+    rate(http_requests_received_total[1m])
+
