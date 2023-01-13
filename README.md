@@ -134,3 +134,67 @@ Depois devemos inserir este linha de código após var "app = builder.Build();" 
 
 <img width="818" alt="Captura de tela_20230113_134822" src="https://user-images.githubusercontent.com/111398584/212374682-998a1f09-739a-499f-81ab-d88fea326a71.png">
 
+
+Primeiro vamos abordar o docker-compose.yml (Concentre-se nos hashtags #)
+
+    version: '3.1'  # versão do compose
+    networks:  # especificação da rede
+       n_easybox:  # nome da rede
+        driver: bridge # tipo da rede
+
+    services: # serviço
+
+      prometheus: # nome do serviço
+       image: prom/prometheus:v2.22.0 # imagem docker do prometheus
+       ports:  # portas
+         - "9090:9090"
+       volumes: # volumes
+         - ./prometheus.yml:/etc/prometheus/prometheus.yml
+       networks: # a rede
+         - n_easybox
+       
+De forma simples ficaria assim :
+
+    version: '3.1' 
+    networks:
+       n_easybox:
+        driver: bridge
+
+    services:
+
+      prometheus:
+       image: prom/prometheus:v2.22.0
+       ports:
+         - "9090:9090"
+       volumes:
+         - ./prometheus.yml:/etc/prometheus/prometheus.yml
+       networks:
+         - n_easybox
+       
+    
+Esta linha :  "- ./prometheus.yml:/etc/prometheus/prometheus.yml" ela é um arquivo a parte .yml que deve ficar no mesmo diretório do docker-compose.yml
+
+
+        global: 
+          scrape_interval: 15s 
+          scrape_timeout: 5s 
+          evaluation_interval: 15s 
+          external_labels: 
+           servico: service-prometheus 
+
+        scrape_configs:
+          - job_name: prometheus
+            static_configs:
+              - targets: ["localhost:9090"] # esta é a url do prometheus 
+                labels:
+                  grupo: "Prometheus"
+
+          - job_name: ApiEasyBox
+            scrape_interval: 5s
+            scrape_timeout: 1s
+            scheme: http
+            metrics_path: /metrics # este é o path onde se encontra o caminho das métricas que a api lança
+            static_configs:
+              - targets: ["easybox:80"] # esta é a api espelhada na porta 80, este nome easybox é o nome da imagem que foi instanciada .
+                labels:
+                  grupo: "webapi"
