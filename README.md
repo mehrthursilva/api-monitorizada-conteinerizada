@@ -98,4 +98,38 @@ Informação,
 Buscáveis
 
 
+Prometheus serve para coletar métricas na api, fazer consulta com elas, criar alertas e enviar em diversos outros softwares como Alert manager e Grafana.
+
+![download](https://user-images.githubusercontent.com/111398584/212371744-fbe1e12c-8e9b-41f2-b6c0-e7f2280b49bb.png)
+
+
+Primeiro criar uma api e na api instalar a seguinte lib:
+
+    prometheus-net.AspNetCore(7.0.0)
+
+Depois devemos na classe Program.cs inserir o seguinte using:
+
+    using Prometheus;
+    
+Depois devemos inserir este linha de código após var "app = builder.Build();" :
+
+    /*INICIO DA CONFIGURAÇÃO - PROMETHEUS*/
+    var counter = Metrics.CreateCounter("nome-da-api", "Counts requests to the WebApiMetrics API endpoints",
+                  new CounterConfiguration
+                  {
+                      LabelNames = new[] { "method", "endpoint" }
+                  });
+
+    app.Use((context, next) =>
+    {
+    counter.WithLabels(context.Request.Method, context.Request.Path).Inc();
+    return next();
+    });
+
+    // Use the prometheus middleware
+    app.UseMetricServer();
+    app.UseHttpMetrics();
+    /*FIM DA CONFIGURAÇÃO - PROMETHEUS*/
+
+
 
