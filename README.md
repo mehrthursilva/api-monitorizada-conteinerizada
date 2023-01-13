@@ -198,3 +198,33 @@ Esta linha :  "- ./prometheus.yml:/etc/prometheus/prometheus.yml" ela é um arqu
               - targets: ["easybox:80"] # esta é a api espelhada na porta 80, este nome easybox é o nome da imagem que foi instanciada .
                 labels:
                   grupo: "webapi"
+                  
+                  
+ Nota - Sempre que for criar uma nova api e quer que este mesmo prometheus colete as métricas é simplesmente aumentar o range de - targets: ["easybox:80","outra-api"]
+
+Ao ir em targets no Prometheus poderá ver a seguinte imagem:
+
+<img width="926" alt="Captura de tela_20230113_150300" src="https://user-images.githubusercontent.com/111398584/212389091-8415a0a3-f5d9-4858-8349-e5810a6ddf72.png">
+
+Veremos que a nossa api está no ar e que o prometheus coleta métricas de ele mesmo.
+
+
+# PROMQL
+
+Em resumo como podemos fazer querys de métricas para o prometheus sobre a nossa api?
+
+Nossa aplicação quando a gente navega em /metrics:
+
+<img width="938" alt="Captura de tela_20230112_182359" src="https://user-images.githubusercontent.com/111398584/212389459-51947a2a-4c77-43d6-b67b-e3691e2d6b0a.png">
+
+1- passo ver aqual é a métrica que queremos consultar:
+
+vou consultar:
+
+       http_Prequests_received_total
+       
+       
+       <img width="949" alt="Captura de tela_20230113_151041" src="https://user-images.githubusercontent.com/111398584/212390913-de031bb8-d5e6-4f25-bab0-ac4d9be73c37.png">
+
+<img width="952" alt="Captura de tela_20230113_151131" src="https://user-images.githubusercontent.com/111398584/212390936-ef73ce33-3102-4ac3-ac93-fcea9fe4220b.png">
+
