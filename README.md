@@ -223,8 +223,8 @@ vou consultar:
 
        http_Prequests_received_total
        
-       
-       <img width="949" alt="Captura de tela_20230113_151041" src="https://user-images.githubusercontent.com/111398584/212390913-de031bb8-d5e6-4f25-bab0-ac4d9be73c37.png">
+ Teria um formato semelhante as duas imagens:
+<img width="949" alt="Captura de tela_20230113_151041" src="https://user-images.githubusercontent.com/111398584/212390913-de031bb8-d5e6-4f25-bab0-ac4d9be73c37.png">
 
 <img width="952" alt="Captura de tela_20230113_151131" src="https://user-images.githubusercontent.com/111398584/212390936-ef73ce33-3102-4ac3-ac93-fcea9fe4220b.png">
 
