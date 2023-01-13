@@ -132,4 +132,5 @@ Depois devemos inserir este linha de código após var "app = builder.Build();" 
     /*FIM DA CONFIGURAÇÃO - PROMETHEUS*/
 
 
+<img width="818" alt="Captura de tela_20230113_134822" src="https://user-images.githubusercontent.com/111398584/212374682-998a1f09-739a-499f-81ab-d88fea326a71.png">
 
