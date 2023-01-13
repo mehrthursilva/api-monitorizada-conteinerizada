@@ -82,7 +82,7 @@ Métricas de infraestrutura
 Nós ativos
 Cluster funcionando
 
-#Métricas não são logs!
+# Métricas não são logs!
 
 
 Métricas
