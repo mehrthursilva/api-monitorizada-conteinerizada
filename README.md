@@ -85,16 +85,16 @@ Cluster funcionando
 # Métricas não são logs!
 
 
-Métricas
-Dados Numéricos
-Gráficos
-Agregações
+Métricas -->
+Dados Numéricos,
+Gráficos,
+Agregações,
 Performance
 
-Logs
-Dados Textuais
-Mensagens de erro
-Informação
+Logs -->
+Dados Textuais,
+Mensagens de erro,
+Informação,
 Buscáveis
 
 
