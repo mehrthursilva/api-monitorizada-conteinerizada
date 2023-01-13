@@ -247,4 +247,17 @@ Média de chamadas em 1 minuto:
 Soma de todas as requisições por api
 
     sum(http_requests_received_total) by (job)
+    
+    
+    
+# Enviar as métricas do prometheus para o Grafana!
 
+A intenção é mostrar de forma simples de como juntar o prometheus com grafana e criar um painel com as métricas do prometheus.
+
+1 -Entrar no Grafana:
+
+<img width="949" alt="Captura de tela_20230113_160210" src="https://user-images.githubusercontent.com/111398584/212398429-e11beba6-5b18-4bbe-846a-28b5e291f2c9.png">
+
+2- Vá em comfigurações e datasources
+
+<img width="950" alt="Captura de tela 2023-01-13 160345" src="https://user-images.githubusercontent.com/111398584/212398790-7173968e-644c-419e-a22e-f270112beca3.png">
