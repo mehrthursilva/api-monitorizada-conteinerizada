@@ -258,6 +258,51 @@ A intenção é mostrar de forma simples de como juntar o prometheus com grafana
 
 <img width="949" alt="Captura de tela_20230113_160210" src="https://user-images.githubusercontent.com/111398584/212398429-e11beba6-5b18-4bbe-846a-28b5e291f2c9.png">
 
-2- Vá em comfigurações e datasources
+2- Vá em comfigurações e datasources:
 
 <img width="950" alt="Captura de tela 2023-01-13 160345" src="https://user-images.githubusercontent.com/111398584/212398790-7173968e-644c-419e-a22e-f270112beca3.png">
+
+3-Adicionar um datasource:
+
+<img width="482" alt="Captura de tela_20230113_160817" src="https://user-images.githubusercontent.com/111398584/212399362-a4cd90a8-6783-40f6-b88a-16bfabb835dc.png">
+
+4-Selecionar Prometheus:
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/111398584/212399560-eefcb194-0905-40dc-86fd-fe2c92f1821f.png">
+
+5-Inserir a URL do compose do prometheus (http://prometheus:9090)
+
+<img width="398" alt="image" src="https://user-images.githubusercontent.com/111398584/212399789-9a4b3e55-65d2-4f04-b26e-b0d0d2711061.png">
+
+6-Testar e salvar:
+
+<img width="671" alt="image" src="https://user-images.githubusercontent.com/111398584/212399898-63a2d583-842d-4a25-a345-6c2a9ed5340c.png">
+
+7-Vá em criar dashboard:
+
+<img width="197" alt="image" src="https://user-images.githubusercontent.com/111398584/212400190-9f321ce8-94bb-47cc-9837-ec0b18c99ed0.png">
+
+8-Clica em adicionar um painel:
+
+<img width="581" alt="image" src="https://user-images.githubusercontent.com/111398584/212400356-65f0e57e-cb11-4746-9ff1-3814b71fae8b.png">
+
+9-As métricas são escritas onde tem a ceta - no rótulo métrics?
+
+<img width="956" alt="image" src="https://user-images.githubusercontent.com/111398584/212400642-f3d8ec2e-afc9-4956-b987-b1fd5b311feb.png">
+
+10-Seleciona a soma de toas as requisições por job - nesse caso por serviço coletado:
+
+<img width="958" alt="image" src="https://user-images.githubusercontent.com/111398584/212400860-2ead52e1-6e17-4e80-a6ae-eea62bb44177.png">
+
+11-Ao salvar o painel dé um nome a sua escolha:
+
+<img width="444" alt="image" src="https://user-images.githubusercontent.com/111398584/212400996-4715bea7-76e6-4b71-b448-fe9ab0d9abf7.png">
+
+12 - Caso quiser adicionar outro painel é só clicar onde a seta indica:
+
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/111398584/212401374-347b02d1-fa36-4386-b383-b11f35a8efc1.png">
+
+13- Um painel mais personalizado:
+
+<img width="957" alt="metricas" src="https://user-images.githubusercontent.com/111398584/212401476-a317c1b6-4fc7-432d-82a4-ef0b40d676c6.PNG">
+
