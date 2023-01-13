@@ -55,3 +55,45 @@ Para o prometheus faça o seguinte: http://localhost:9090/graph
 Para o grafana Faça o seguinte: http://localhost:3000/login
 
 Para a api : http://localhost:8001/swagger/index.html
+
+
+# Prometheus 
+
+Primeiramente devemos saber o seguinte:
+Metricas são medições numéricas de dados relacionados a elemosntos do seu software ou da infraestrutura.
+São dados relacionados numa linha temporal.
+
+Prometheus é bastante útil para Métricas dentre elas:
+
+Métricas de Sistema:
+Quantidade de requisições
+Quantidade de erros
+Consumo de recursos
+Apis mais acessadas
+Tempo de acesso a um recurso
+
+Metricas de Negócio
+Usuário  acessando a aplicação
+Boletos emitidos
+Compras de produto
+Transação aceite
+
+Métricas de infraestrutura
+Nós ativos
+Cluster funcionando
+
+#Métricas não são logs!
+Métricas
+Dados Numéricos
+Gráficos
+Agregações
+Performance
+
+Logs
+Dados Textuais
+Mensagens de erro
+Informação
+Buscáveis
+
+
+
