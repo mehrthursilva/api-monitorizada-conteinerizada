@@ -60,7 +60,7 @@ Para a api : http://localhost:8001/swagger/index.html
 # Prometheus 
 
 Primeiramente devemos saber o seguinte:
-Metricas são medições numéricas de dados relacionados a elemosntos do seu software ou da infraestrutura.
+Metricas são medições numéricas de dados relacionados a elementos do seu software ou da infraestrutura.
 São dados relacionados numa linha temporal.
 
 Prometheus é bastante útil para Métricas dentre elas:
