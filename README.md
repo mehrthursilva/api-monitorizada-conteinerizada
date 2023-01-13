@@ -306,3 +306,22 @@ A intenção é mostrar de forma simples de como juntar o prometheus com grafana
 
 <img width="957" alt="metricas" src="https://user-images.githubusercontent.com/111398584/212401476-a317c1b6-4fc7-432d-82a4-ef0b40d676c6.PNG">
 
+
+E por final o .yml do Grafana que estamos usando no projeto:
+
+
+            version: '3.1'
+    networks:
+       n_easybox:
+        driver: bridge
+
+    services:
+
+      grafana:
+       image: grafana/grafana:7.3.3
+       ports:
+         - "3000:3000"
+       networks:
+         - n_easybox
+         
+ Nota : os componentes estão dentro da mesma rede que é n_easybox.
