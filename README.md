@@ -228,3 +228,10 @@ vou consultar:
 
 <img width="952" alt="Captura de tela_20230113_151131" src="https://user-images.githubusercontent.com/111398584/212390936-ef73ce33-3102-4ac3-ac93-fcea9fe4220b.png">
 
+
+Filtrar apenas aqueles endpoints que o status code dá 200:
+
+    http_requests_received_total{code="200"}
+    
+<img width="952" alt="Captura de tela_20230113_152010" src="https://user-images.githubusercontent.com/111398584/212391730-528b66dd-9415-42d4-9164-576faf675d43.png">
+
