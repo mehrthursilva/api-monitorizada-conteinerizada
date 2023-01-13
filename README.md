@@ -243,4 +243,8 @@ Outras querys básicas mas que fazem muita diferença caso quiser-mos achar os v
 Média de chamadas em 1 minuto:
 
     rate(http_requests_received_total[1m])
+    
+Soma de todas as requisições por api
+
+    sum(http_requests_received_total) by (job)
 
