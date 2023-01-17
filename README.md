@@ -325,3 +325,5 @@ E por final o .yml do Grafana que estamos usando no projeto:
          - n_easybox
          
  Nota : os componentes estão dentro da mesma rede que é n_easybox.
+ 
+ 
