@@ -111,6 +111,7 @@ Depois devemos na classe Program.cs inserir o seguinte using:
 
     using Prometheus;
     
+    
 Depois devemos inserir este linha de código após var "app = builder.Build();" :
 
     /*INICIO DA CONFIGURAÇÃO - PROMETHEUS*/
