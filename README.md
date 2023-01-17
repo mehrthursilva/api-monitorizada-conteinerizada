@@ -1,4 +1,4 @@
-# api-monitorizada-conteinerizada
+# api-monitorizada-conteinerizada.
 Api conteinerizada com telemetria e observabilidade.
 
 Hoje o Docker tem se tornado um requesito mínimo de atuação para os desenvolvedores.
